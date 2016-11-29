@@ -1,21 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package prueba_colectiva;
 
-/**
- *
- * @author usuario
- */
+import Colectico.Clase;
+import javax.swing.JOptionPane;
+
+
 public class Prueba_colectiva {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        int n1,n2;
+        
+        n1= Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero1"));
+        n2= Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero2"));
+        
+        Clase objeto = new Clase(n1,n2);
+        
+        objeto.calcular();
     }
     
 }
